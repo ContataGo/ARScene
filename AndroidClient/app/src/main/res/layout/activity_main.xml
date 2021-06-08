@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/imgPath"-->
+<!--        android:hint="File Path Appears Here"/>-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recVideo"
+        android:id="@+id/recVideo"
+        android:onClick="recVideo"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selectFile"
+        android:id="@+id/selectFile"
+        android:onClick="selectFile"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numSelectedFiles"
+        android:id="@+id/numSelectedFiles"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#988734"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/hostAddress"
+            android:textStyle="bold"
+            android:textColor="#988734" />
+        <EditText
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/IPAddress"
+            android:text="@string/hostAddressN"
+            android:singleLine="true"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/hostPort"
+            android:textColor="#988734"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/portNumber"
+            android:text="@string/hostPortN"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/modelName"
+            android:textColor="#988734"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/modelName"
+            android:text="@string/modelNameN"
+            android:singleLine="true"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="connectServer"
+        android:text="@string/connectServer"
+        android:id="@+id/connectServer"
+        android:textColor="#6CA22F"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="downloadServer"
+        android:text="@string/downloadServer"
+        android:id="@+id/downloadServer"
+        android:textColor="#6CA22F"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/responseText"
+        android:id="@+id/responseText"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startAR"
+        android:text="@string/startAR"
+        android:id="@+id/button"
+        android:textColor="#6CA22F"
+        android:textStyle="bold" />
+
+</LinearLayout>

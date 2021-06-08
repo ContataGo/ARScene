@@ -1,0 +1,74 @@
+{
+  animations: [
+    {
+      clips: [
+        {
+          name: 'Take 001',
+          runtime_name: 'nathan',
+        },
+      ],
+      path: 'sampledata/nathan/nathan.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'rp_nathan_animated_003_mat',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'rp_nathan_animated_003_dif',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/nathan/nathan.fbx',
+    name: 'nathan',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/nathan\\nathan.fbm\\rp_nathan_animated_003_dif.jpg',
+      name: 'rp_nathan_animated_003_dif',
+      pipeline_name: 'nathan.fbm\\rp_nathan_animated_003_dif.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

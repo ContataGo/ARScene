@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ARActivity">
+
+    <fragment
+        android:id="@+id/arFragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/nathan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nathan"
+        android:layout_toEndOf="@id/button"/>
+    <Button
+        android:id="@+id/manuel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manuel"
+        android:layout_toEndOf="@id/nathan"/>
+    <Button
+        android:id="@+id/sophia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sophia"
+        android:layout_toEndOf="@id/manuel"/>
+
+
+
+
+
+
+</RelativeLayout>
